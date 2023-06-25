@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./CSS/estilo.css">
+    
+</head>
+<body>
+    <div class="d1">
+        <h1>Registrar Usuario</h1>
+            <form action="./PHP/registro.php" id="frmregistro"  method="post" autocomplete="on">
+                 <label for="">Nombre</label>
+                 <input type="text" placeholder="Nombre" name="Nombre" required minlength="20" pattern="[A-Za-z]?+"><br>
+                 <label for="">Usuario</label> 
+                 <input type="text" name="Usuario1" placeholder="Usuario"  required maxlength="12"><br>
+                 <label for="E-mail">Correo Electronico: </label>
+                 <input type="E-mail" name="correo" id="correo" placeholder="ejem. alfa0504@gmail.com" required><br>
+                 <label for="">Fecha de Nacimiento: </label>
+                 <input type="date" name="fecha" id="fecha" required><br>
+                 <label for="">Número De Teléfono: </label>
+                 <input type="text" name="Numero" id="Numero" placeholder="ejem. 7891477851" required minlength="10">
+                 <label for="psswd">Contraseña: </label>
+                 <input type="password" placeholder="Contraseña" name="psswd" id="psswd1" required><br>
+                 <label for="psswdc">Confirma La  Contraseña: </label>
+                 <input type="password" placeholder="Contraseña" name="psswdc" id="psswdcon" required><br>
+
+                 <button type="submit" title="Registrarse" name="LogIn">Registrarse</button><br>
+            </form>
+            <script src="./JS/Val.js"></script>
+    </div>
+</body>
+</html>
